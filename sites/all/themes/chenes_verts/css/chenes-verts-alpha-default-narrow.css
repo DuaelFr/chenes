@@ -1,0 +1,73 @@
+/* This file will hold styles that are loaded using the same media query as the narrow grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the normal and widescreen layouts. You may override these styles in the normal 
+ *  and widescreen CSS files as appropriate. */
+
+/* BACKGROUND BODY */
+
+body{background-image:url('../fond_chenes.jpg');}
+
+
+/* FRONTPAGE */
+
+.front .container-12 .grid-12{width:720px;margin-right:0px;margin-left:0px;}
+#block-system-main {margin: 0px !important;}
+#block-views-pages-promues-block{margin-left:10px;margin-right:10px;}
+
+/* HEADER */
+
+#block-block-1, #block-block-6{position:relative; margin-top:-30px;}
+#region-user-second.grid-4{width:300px;}
+
+
+/* USER MENU */
+
+.block-language{margin-left:130px; position:relative; z-index:10;}
+#block-block-2 p{margin:0; text-align:right;}
+
+/* ZONE MENU */
+
+#zone-menu-wrapper{height:25px; background:#83b110;}
+#zone-menu-wrapper .sf-menu li{display:table-cell; font-size:14px; height:20px; margin:0; padding:5px 10px 0 10px; vertical-align:middle; border-right:1px solid #a0d713;}
+#zone-menu-wrapper .sf-menu li a{color:white;}
+#zone-menu-wrapper .sf-menu li ul{top:25px;}
+#zone-menu-wrapper .sf-menu li.sf-depth-2{background:#83b110; font-size:12px; height:auto; padding:10px; width:200px !important;}
+#zone-menu-wrapper .sf-menu li.sf-depth-2:hover, #zone-menu-wrapper .sf-menu li.sf-depth-2.active-trail{background:#335212;}
+
+
+
+/* SLIDESHOW FRONT */
+.views-slideshow-controls-bottom{display:block;position:absolute;bottom:3%;right:12%;z-index: 51;width:100px;}
+#slideshow_pager{background-image:url("../page_off.png");width:12px;height:12px;float:left;margin-right:5px;}
+.active #slideshow_pager{background-image:url("../page_on.png");}
+
+.view-id-slideshow .slider_text{width: 40%;height:100%;position: absolute;background-image:url("../bg_50pct.png");color: white;top:0px;right:0px;padding:3% 4%;background-color: transparent;}
+.block-slideshow-block{overflow:hidden; position:relative;}
+#slider_title{font-size:1.2em;margin-bottom: 0.6em;line-height: 1.2em;}
+#slider_body p{margin-bottom:1em;font-size:0.9em;}
+
+/* PROMOTED FRONT */
+
+.view-pages-promues .views-row{float:left;margin-right:3.5%;width:31%;}
+.view-pages-promues .views-row img{width:100%;height:auto;}
+.view-pages-promues .views-row.views-row-last{margin-right:0;}
+.view-pages-promues #promoted_title{background-image:url("../bg_50pct.png");position:absolute;bottom:0px;width:98%;padding-left:2%;color:white;font-size:1.3em;}
+.view-pages-promues .image_w_title{position:relative;}
+.view-pages-promues .views-field-body{font-size:0.9em;margin-top:3%;padding:1%;}
+.view-pages-promues .views-field-body p{margin:0px;}
+.view-pages-promues .promoted_more{text-align: right;margin-right: 3%;font-size: 0.7em;}
+
+/* FOOTER */
+#region-footer-first{margin-bottom:3%;}
+
+/* ACTUALITES SIDEBAR */
+.view-actualites .views-field-title{float:left;width:65%;font-size:0.8em;}
+.view-actualites .views-field-body{float:left;width:65%;font-size:0.8em;}
+
+/* DIAPORAMA */
+
+.galleryformatter{float:left; margin:0 20px 20px 0;}
+
+/* COLONNE DROITE */
+
+#block-block-4 .submit, #block-block-7 .submit{height:auto; width:100%;}

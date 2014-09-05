@@ -1,0 +1,27 @@
+/* This file will hold styles that are loaded using the same media query as the normal grid. */
+/* If you are using the default media queries provided by Omega, these styles will also
+ *  apply to the widescreen layout unless they are overridden by the widescreen styles. */
+ 
+ 
+/* FOOTER */
+
+#zone-footer{height:70px;}
+
+/* FRONTPAGE */
+
+.front .container-12 .grid-12{width:960px;margin-right:0px;margin-left:0px;}
+#block-system-main {margin: 0px !important;}
+#block-views-pages-promues-block{margin-left:10px;margin-right:10px;}
+
+/* SLIDESHOW FRONT */
+.view-id-slideshow .slider_text{width: 26%;height:100%;position: absolute;background-image:url("../bg_50pct.png");color: white;top:0px;right:0px;padding:3% 4%;}
+.block-slideshow-block{overflow:hidden; position:relative;}
+#slider_title{font-size:2.2em;margin-bottom: 0.6em;line-height: 1.2em;}
+#slider_body p{margin-bottom:1em;}
+
+/* FOOTER */
+#region-footer-first{width:390px;margin-bottom:0%;}
+
+/* ACTUALITES SIDEBAR */
+.view-actualites .views-field-title{float:left;width:70%;font-size:1em;}
+.view-actualites .views-field-body{float:left;width:70%;font-size:1em;}

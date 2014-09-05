@@ -1,0 +1,165 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+
+body, h1, h2{font-weight:normal; font-family:verdana;}
+body a:link{text-decoration:none;}
+
+h1{color:#83b110; font-size:20px; text-transform:uppercase;}
+#breadcrumb{color:#666666; font-size:12px; margin:10px 0 10px 10px;}
+#breadcrumb a{color:#999999;}
+ul.inline li.translation_en, ul.inline li.translation_fr{display:none;}
+.not-front #block-system-main .content.clearfix{margin-bottom:20px;}
+
+/* HEADER */
+
+.region-header-first p{margin:0;}
+#section-header{background:white;}
+#zone-header-wrapper img{width:100% !important;max-width:476px!important;height:auto!important;}
+#region-user-first{float:left; width:auto;}
+#region-user-second{float:right; z-index:10;}
+
+/* SLIDESHOW */
+
+.view-id-slideshow .views-row .views-field-field-image img{width:100%;height:auto;}
+.view-id-slideshow .slider_text{width: 92%;background-color:#3b3b3b;color: white;padding:3% 4% 0.5% 4%;}
+.block-slideshow-block{overflow:hidden; position:relative;}
+#slider_title{font-size:1em;margin-bottom: 0.6em;line-height: 1.2em;}
+#slider_body p{margin-bottom:1em;font-size:0.8em;}
+.views-slideshow-controls-bottom{display:none;}
+
+/* BACKGROUND BODY */
+
+#zone-content{background-color:white;}
+
+
+/* PROMOTED FRONT */
+
+.view-pages-promues .views-row{float:left;width:100%;}
+.view-pages-promues .views-row img{width:100%;height:auto;}
+.view-pages-promues .views-row.views-row-last{margin-right:0;}
+.view-pages-promues #promoted_title{background-image:url("../bg_50pct.png");position:absolute;bottom:0px;width:98%;padding-left:2%;color:white;font-size:1.3em;}
+.view-pages-promues .image_w_title{position:relative;}
+.view-pages-promues .views-field-body{font-size:0.9em;margin-top:3%;padding:1%;}
+.view-pages-promues .views-field-body p{margin:0px;}
+.view-pages-promues .promoted_more{text-align: right;margin-right: 3%;font-size: 0.7em;}
+
+/* PROMOTED SIDEBAR */
+
+#block-views-pages-promues-block-1 .views-row{float:left;margin-bottom:10%;width:100%;}
+
+/* GENERAL */
+#region-content .block{margin-bottom:3em;}
+a:link, a:visited {color:#83b110;} 
+a:hover {}
+#block-system-main{margin:5px !important;}
+
+/* FORMULAIRES */
+
+.webform-client-form label{font-weight:normal; margin-bottom:5px;}
+.webform-client-form .form-text, .webform-client-form select{border: 1px solid #d9d9d9; background: white;border-radius: 8px;height:30px;outline: none;}
+.webform-client-form select{padding-left:10px;}
+.webform-client-form .form-text{width:100%;}
+.webform-calendar{margin-top:5px;}
+.webform-client-form .form-submit{background:#83b110; color:white; font-weight:normal; padding:5px 10px 5px 10px; font:normal 12px Verdana; float:right;}
+.webform-client-form .form-submit:hover{background:#83b110;}
+.webform-client-form textarea{border: 1px solid #d9d9d9; background: white; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; margin-bottom: 20px; resize:none;outline:none;}
+
+
+/* ACTUALITES SIDEBAR */
+
+.view-actualites .views-field-field-image img{border-radius:5px;float:left;margin-right:5%;-webkit-box-shadow: #666 2px 2px 3px;-moz-box-shadow: #666 2px 2px 3px;box-shadow: #666 2px 2px 3px;}
+.view-actualites .views-field-title{float:left;width:70%;}
+.view-actualites .views-field-body{float:left;width:70%;}
+.view-actualites .views-field-body p{margin:0;}
+.view-actualites .views-field-created{clear:both;width:100%;text-align:right;color:grey;font-size:0.85em;}
+.view-actualites .views-row{margin-bottom:5%;border-bottom:1px dotted #BBBBBB;padding:2% 0;}
+
+/* PAIEMENT SIDEBAR */
+
+#block-block-4 img, #block-block-7 img{width:100% !important;max-width:300px !important;height:auto !important;}
+
+/* ACTUALITES LIST */
+
+#block-views-actualites-block-1 .views-row{margin-bottom:0;}
+
+
+/* PAGE DE BASE */
+
+.node-page .field-name-field-image img, .node-actualite .field-name-field-image img {width:100%;height:auto;margin-bottom:2%;}
+
+/* A METTRE DANS GLOBAL */
+
+.front #breadcrumb{display:none;}
+.not-front #region-content p{color:#999999; font-size:12px;}
+
+
+
+.block-language ul{margin:0;}
+.block-language li{float:left; list-style-type:none; list-style-image:none;}
+.block-language li a{-webkit-border-radius:0 0 4px 4px; -moz-border-radius:0 0 4px 4px; border-radius:0 0 4px 4px; color:#83b110; display:block; padding:0 5px 2px 5px;}
+.block-language li a.active{color:white; background:#83b110;}
+
+.front #page-title{display:none;}
+
+#zone-footer{background: #56750b; background: -webkit-linear-gradient(#56750b, #83B110 20px 10px); background: -moz-linear-gradient(#56750b, #83B110 20px);
+background: -ms-linear-gradient(#56750b, #83B110 20px); background: -o-linear-gradient(#56750b, #83B110 20px); background: linear-gradient(#56750b, #83B110 20px); color:white; padding-top:10px;}
+#zone-footer li{float:left; height:12px; list-style-type:none; list-style-image:none; }
+#zone-footer li a{color:white; display:block; font-size:11px; }
+
+#region-footer-first{width:90%;margin-bottom:7%;}
+
+#region-footer-second{float:right; width:auto;}
+#region-footer-second p{font-size:11px; text-align:right;}
+
+.block-quicktabs .item-list li{margin:0;}
+.block-quicktabs .item-list a{background:#83b110; color:white; -webkit-border-radius:4px 4px 0 0; -moz-border-radius:4px 4px 0 0; border-radius:4px 4px 0 0; 
+padding:0 5px 2px 5px;}
+
+.gallery-slide img{}
+
+/* MENU PRINCIPAL */
+
+#superfish-1-select{margin:8% 0% 4%; background: #83b110;
+background-image: url(/sites/default/files/restricted/arrow.png);
+background-repeat: no-repeat;
+color: white;
+font-weight: bold;
+height: auto;
+background-position: right;
+padding: 10px;
+text-transform: uppercase;
+width: 100%;}
+
+/* COLONNE DROITE */
+
+#block-block-4 ing{height:auto; max-width:100%;}
+#block-block-4 span, #block-block-7 span{display:block; margin:20px 0 20px 0;}
+#block-block-4 .submit, #block-block-7 .submit{height:auto; width:300px;}
+
+/* DIAPORAMA */
+
+.panel-overlay, .gallery-slides .slide-button{display:none;}
+.gallery-slides {margin:0 0 7px 0 !important;}
+.galleryformatter {margin:0; height:305px !important; width:300px; margin:0 20px 20px 0;
+display:inline-block; height:130px; box-shadow:0 0 10px #dcdcdc; padding:7px; 
+background: #Fdfdfd;
+background: -webkit-gradient(linear, 0 0, 0 bottom, from(#Fdfdfd), to(#FaFaFa));
+background: -webkit-linear-gradient(#Fdfdfd, #FaFaFa);
+background: -moz-linear-gradient(#Fdfdfd, #FaFaFa);
+background: -ms-linear-gradient(#Fdfdfd, #FaFaFa);
+background: -o-linear-gradient(#Fdfdfd, #FaFaFa);
+background: linear-gradient(#Fdfdfd, #FaFaFa);
+}
+.gallery-thumbs li a{background:none;}
+.gallery-thumbs .wrapper{margin:auto; width:270px;}
+.gallery-thumbs .arrow{position:absolute; color:transparent; text-indent:-500px; overflow:hidden; height:14px; width:8px; margin-top:-37px;}
+.gallery-thumbs .arrow.back{background:url(/sites/default/files/restricted/prev.png) no-repeat; margin-left:-2px;}
+.gallery-thumbs .arrow.forward{background:url(/sites/default/files/restricted/next.png) no-repeat; margin-left:289px;}
+
+/* FICHE CHAMBRE */
+
+.quicktabs-tabs li.first{display:none;}
+
+/* ATTRIBUT SUFFIXE COMPOSANT */
+
+.description{font-style:italic;}
