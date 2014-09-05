@@ -1,10 +1,12 @@
 
 Drupal.behaviors.galleryformatter = {
   attach: function (context) {
-    (jQuery)('.galleryformatter:not(.gallery-processed)', context).each(function(){
-      Drupal.galleryformatter.prepare(this);
-
-    }).addClass('gallery-processed');
+    // We must wait for everything to load in order to get images' dimensions.
+    (jQuery)(window).bind('load', function() {
+      (jQuery)('.galleryformatter:not(.gallery-processed)', context).each(function(){
+        Drupal.galleryformatter.prepare(this);
+      }).addClass('gallery-processed');
+    });
   }
 };
 
@@ -72,12 +74,14 @@ Drupal.galleryformatter.prepare = function(el) {
     /*
      *  Startup behaviour (when the page first loads)
      */
-    $slides.hide(); // hide all slides
+    if ($slides.length > 1) {
+      $slides.hide(); // hide all slides
+    }
     var $locationHash = window.location.hash; // if we are being deeplinked to a specific slide, capture that
 
     function showFirstSlide(){
       // Activate the first slide
-      $('a', $thumbsLi.filter('.slide-0:not("cloned")')).trigger('click');
+      $('a', $thumbsLi.filter('.slide-0:not(".cloned")')).trigger('click');
      }
 
     // if we have a hash in the url
@@ -106,7 +110,7 @@ Drupal.galleryformatter.prepare = function(el) {
     // Shows the previous slide and scrolls to the previous page if necessary
     $thumbs.bind('showPrev', function (event) {
       var currentScroll = $wrapper.get(0).scrollLeft;
-      var $prevThumbLi = $thumbsLi.filter('.active').prevAll().not('.cloned, .empty, .active').filter(':first');
+      var $prevThumbLi = $thumbsLi.filter('.active').prev(':not(".cloned, .empty, .active")');
       // if no results we are on the first element
       if(!$prevThumbLi.size()) {
         // select the last one
@@ -126,7 +130,7 @@ Drupal.galleryformatter.prepare = function(el) {
     $thumbs.bind('showNext', function (event) {
       var currentScroll = $wrapper.get(0).scrollLeft;
       // this selector could be optimized perhaps, but
-      var $nextThumbLi = $thumbsLi.filter('.active').nextAll().not('.cloned, .empty, .active').filter(':first');
+      var $nextThumbLi = $thumbsLi.filter('.active').next(':not(".cloned, .empty, .active")');
       // if no results we are on the last element
       if(!$nextThumbLi.size()) {
         // select the first one
@@ -149,15 +153,17 @@ Drupal.galleryformatter.prepare = function(el) {
       $thumbs.trigger('showNext');
     });
 
-     // Setup buttons for next/prev slide
-    $slideButtons = ('<a class="prev-slide slide-button" title="'+ Drupal.t('Previous image') +'">&lt;</a><a class="next-slide slide-button" title="'+ Drupal.t('Next image') +'">&gt;</a>');
-    $('.gallery-slides', $el).append($slideButtons);
-    // Trigger the appropiate events on click
-    $('a.prev-slide', $el).click(function(){
-      $thumbs.trigger('showPrev');
-    });
-    $('a.next-slide', $el).click(function(){
-      $thumbs.trigger('showNext');
-    });
+    if ($slides.length > 1) {
+      // Setup buttons for next/prev slide
+      $slideButtons = ('<a class="prev-slide slide-button" title="'+ Drupal.t('Previous image') +'">&lt;</a><a class="next-slide slide-button" title="'+ Drupal.t('Next image') +'">&gt;</a>');
+      $('.gallery-slides', $el).append($slideButtons);
+      // Trigger the appropiate events on click
+      $('a.prev-slide', $el).click(function(){
+        $thumbs.trigger('showPrev');
+      });
+      $('a.next-slide', $el).click(function(){
+        $thumbs.trigger('showNext');
+      });
+    }
   })(jQuery);
 }
