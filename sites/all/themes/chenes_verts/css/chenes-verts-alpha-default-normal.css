@@ -25,3 +25,13 @@
 /* ACTUALITES SIDEBAR */
 .view-actualites .views-field-title{float:left;width:70%;font-size:1em;}
 .view-actualites .views-field-body{float:left;width:70%;font-size:1em;}
+
+/* WEBFORMS */
+.webform-client-form {}
+.webform-client-form .webform-component { display: inline-block; width: 49%; vertical-align: top; }
+.webform-client-form .webform-component.webform-component-textarea { width: 100%; }
+
+#webform-component-objet-de-la-demande, #webform-component-object { width: 100%; }
+#webform-component-code-postal, #webform-component-post-code { width: 15%; }
+#webform-component-ville, #webform-component-city { width: 41%; }
+#webform-component-pays, #webform-component-country { width: 41%; }
