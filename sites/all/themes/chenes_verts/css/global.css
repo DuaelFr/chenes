@@ -16,7 +16,7 @@ ul.inline li.translation_en, ul.inline li.translation_fr{display:none;}
 #section-header{background:white;}
 #zone-header-wrapper .logo {}
 #zone-header-wrapper .logo img{width:100% !important;max-width:476px!important;height:auto!important;}
-#zone-header-wrapper .slogan { color: #BFBFBF; font-size: 1.15em; font-weight: bold; line-height: 50px; margin-left: 10px; }
+#zone-header-wrapper .slogan { color: #00b050; font-size: 1.15em; font-weight: bold; line-height: 50px; margin-left: 10px; }
 #region-user-first{float:left; width:auto;}
 #region-user-second{float:right; z-index:10;}
 
