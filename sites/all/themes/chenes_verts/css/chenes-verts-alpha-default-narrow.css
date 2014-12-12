@@ -30,9 +30,12 @@ body{background-image:url('../fond_chenes.jpg');}
 #zone-menu-wrapper{height:25px; background:#83b110;}
 #zone-menu-wrapper .sf-menu li{display:table-cell; font-size:14px; height:20px; margin:0; padding:5px 10px 0 10px; vertical-align:middle; border-right:1px solid #a0d713;}
 #zone-menu-wrapper .sf-menu li a{color:white;}
-#zone-menu-wrapper .sf-menu li ul{top:25px;}
-#zone-menu-wrapper .sf-menu li.sf-depth-2{background:#83b110; font-size:12px; height:auto; padding:10px; width:200px !important;}
-#zone-menu-wrapper .sf-menu li.sf-depth-2:hover, #zone-menu-wrapper .sf-menu li.sf-depth-2.active-trail{background:#335212;}
+#zone-menu-wrapper .sf-menu li.sf-depth-1 > ul {top:25px;}
+#zone-menu-wrapper .sf-menu li.sf-depth-2 > ul {left: 220px !important;}
+#zone-menu-wrapper .sf-menu li.sf-depth-2,
+#zone-menu-wrapper .sf-menu li.sf-depth-3 {background:#83b110; font-size:12px; height:auto; padding:10px; width:200px !important;}
+#zone-menu-wrapper .sf-menu li.sf-depth-2:hover, #zone-menu-wrapper .sf-menu li.sf-depth-2.active-trail,
+#zone-menu-wrapper .sf-menu li.sf-depth-3:hover, #zone-menu-wrapper .sf-menu li.sf-depth-3.active-trail {background:#335212;}
 
 
 
